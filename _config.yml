@@ -1,0 +1,4 @@
+safe: true
+exclude: [node_modules, CNAME, Gemfile, Gemfile.lock, gulpfile.js, package.json, README.md]
+sass:
+    style: :compressed
