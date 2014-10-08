@@ -1,5 +1,5 @@
 /*------------------------------------*\
-   Helper classes
+    #HELPERS
 \*------------------------------------*/
 
 /**
@@ -10,6 +10,7 @@
     display: none !important;
     visibility: hidden;
 }
+
 
 /**
  * Hide only visually, but have it available for screen readers: h5bp.com/v
@@ -26,6 +27,7 @@
     width: 1px;
 }
 
+
 /**
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
@@ -41,6 +43,7 @@
     width: auto;
 }
 
+
 /**
  * Hide visually and from screen readers, but maintain layout
  */
@@ -48,6 +51,7 @@
 .invisible {
     visibility: hidden;
 }
+
 
 /**
  * Clearfix: contain floats

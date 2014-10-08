@@ -1,12 +1,41 @@
 /*------------------------------------*\
-   Base styles
+    #BASE
 \*------------------------------------*/
+
+/**
+ * Box sizing
+ */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/**
+ * Full screen background
+ */
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(../images/bg-katecharlie-lake.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 /**
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -15,7 +44,7 @@ html {
  */
 
 ::-moz-selection {
-    background: #555;
+    background: rgba(#000,0.7);
     text-shadow: none;
     color: #fff;
 }
@@ -25,6 +54,7 @@ html {
     text-shadow: none;
     color: #fff;
 }
+
 
 /**
  * A better looking default horizontal rule
@@ -39,6 +69,7 @@ hr {
     padding: 0;
 }
 
+
 /**
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
@@ -52,6 +83,7 @@ video {
     vertical-align: middle;
 }
 
+
 /**
  * Remove default fieldset styles.
  */
@@ -61,6 +93,7 @@ fieldset {
     margin: 0;
     padding: 0;
 }
+
 
 /**
  * Allow only vertical resizing of textareas.

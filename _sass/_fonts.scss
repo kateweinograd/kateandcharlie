@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    Fonts
+    #FONTS
 \*------------------------------------*/
 
 /**
@@ -19,3 +19,39 @@
     font-style: normal;
 }
 
+
+/**
+ * Classes for each font type
+ */
+
+.title-font {
+    font-family: $fonts-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1667em;
+}
+
+.subtitle-font {
+    font-family: $fonts-serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.heading-font {
+    font-family: $fonts-cursive;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.subheading-font {
+    font-family: $fonts-fantasy;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.copy-font {
+    font-family: $fonts-sans;
+}

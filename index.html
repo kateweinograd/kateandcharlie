@@ -3,6 +3,7 @@
 
 <!DOCTYPE html>
 <html>
+
     <head>
         <head>
         <title>Kate and Charlie</title>
@@ -28,7 +29,7 @@
                     families: ['monmica-regular']
                 },
                 google: {
-                    families: ['Playfair Display','Playfair Display SC']
+                    families: ['Playfair Display','Alegreya SC']
                 },
                 typekit: {
                     id: 'nom0arr'
@@ -36,18 +37,21 @@
             });
         </script>
     </head>
+
     <body>
-        <div class="center">
-            <h1 class="title-font">Kate <span class="bigger">&amp;</span> Charlie</h1>
-            <h2 class="subtitle-font">April 25, 2015</h2>
-            <h3 class="heading-font">Kate Sullivan and Charles Weinograd</h3>
-            <h4 class="subheading-font">Kate Sullivan and Charles Weinograd</h4>
-            <p class="copy-font">Kate Sullivan and Charles Weinograd</p>
+        <div class="splash-box">
+            <div class="splash-box__content title-box">
+                <h1 class="title-box__title title-font">Kate <span class="title-box__amp">&amp;</span> Charlie</h1>
+                <p class="title-box__subtitle subtitle-font">April 25, 2015</p>
+                <h2 class="title-box__more-info splash-box__coming-soon subheading-font">More info to come.</h2>
+            </div>
         </div>
+
         {% if site.github %}
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         {% else %}
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         {% endif %}
     </body>
+
 </html>
