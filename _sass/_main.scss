@@ -5,3 +5,50 @@
 * {
     box-sizing: border-box;
 }
+
+.title-font {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1667em;
+}
+
+.subtitle-font {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.heading-font {
+    font-family: monmica-regular, cursive;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.subheading-font {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.copy-font {
+    font-family: nimbus-sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bigger {
+    font-size: 1.15em;
+}
+
+.center {
+    text-align: center;
+}
+
+.wf-loading { opacity: 0; }
+
+.wf-active, .wf-inactive {
+    transition: opacity 800ms;
+    opacity: 1;
+}

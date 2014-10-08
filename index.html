@@ -9,12 +9,41 @@
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {% if site.github %}
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+        {% else %}
+        <link rel="stylesheet" href="{{site.github.url}}/bower_components/normalize.css/normalize.css">
+        {% endif %}
         <link rel="stylesheet" href="{{site.github.url}}/css/styles.css">
-        <script src="//use.typekit.net/nom0arr.js"></script>
-        <script>try{Typekit.load();}catch(e){}</script>
+
+        {% if site.github %}
+        <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js"></script>
+        {% else %}
+        <script src="/bower_components/components-webfontloader/webfont.js"></script>
+        {% endif %}
+        <script>
+            WebFont.load({
+                custom: {
+                    families: ['monmica-regular']
+                },
+                google: {
+                    families: ['Playfair Display','Playfair Display SC']
+                },
+                typekit: {
+                    id: 'nom0arr'
+                }
+            });
+        </script>
     </head>
     <body>
-        <h1 class="visuallyhidden">Kate Sullivan and Charles Weinograd</h1>
+        <div class="center">
+            <h1 class="title-font">Kate <span class="bigger">&amp;</span> Charlie</h1>
+            <h2 class="subtitle-font">April 25, 2015</h2>
+            <h3 class="heading-font">Kate Sullivan and Charles Weinograd</h3>
+            <h4 class="subheading-font">Kate Sullivan and Charles Weinograd</h4>
+            <p class="copy-font">Kate Sullivan and Charles Weinograd</p>
+        </div>
         {% if site.github %}
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         {% else %}
