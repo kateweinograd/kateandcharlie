@@ -1,4 +1,17 @@
+# Jekyll config
+
 safe: true
-exclude: [node_modules, CNAME, Gemfile, Gemfile.lock, gulpfile.js, package.json, README.md]
+exclude: [
+    CNAME,
+    Gemfile,
+    Gemfile.lock,
+    LICENSE,
+    README.md,
+    bower.json,
+    gulpfile.js,
+    node_modules,
+    package.json
+  ]
 sass:
-    style: :compressed
+  style: :compressed
+
