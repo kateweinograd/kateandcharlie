@@ -14,16 +14,18 @@
         <link rel="apple-touch-icon" href="{{site.github.url}}/images/apple-touch-icon.png">
 
         {% if site.github %}
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+        <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         {% else %}
-        <link rel="stylesheet" href="{{site.github.url}}/bower_components/normalize.css/normalize.css">
+        <!-- <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"> -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
         {% endif %}
         <link rel="stylesheet" href="{{site.github.url}}/css/styles.css">
 
         {% if site.github %}
         <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js"></script>
         {% else %}
-        <script src="/bower_components/components-webfontloader/webfont.js"></script>
+        <script src="bower_components/components-webfontloader/webfont.js"></script>
         {% endif %}
         <script>
             WebFont.load({
@@ -32,27 +34,63 @@
                 },
                 google: {
                     families: ['Playfair Display','Alegreya SC']
-                },
-                typekit: {
-                    id: 'nom0arr'
-                }
+                }//,
+                // typekit: {
+                //     id: 'nom0arr'
+                // }
             });
         </script>
     </head>
 
     <body>
+        <div class="background"></div>
+
         <div class="splash-box">
             <div class="splash-box__content title-box">
                 <h1 class="title-box__title title-font">Kate <span class="title-box__amp">&amp;</span> Charlie</h1>
                 <p class="title-box__subtitle subtitle-font">April 25, 2015</p>
-                <h2 class="title-box__more-info splash-box__coming-soon subheading-font">More info to come.</h2>
+                <!-- <h2 class="title-box__more-info splash-box__coming-soon subheading-font">More info to come.</h2> -->
+            </div>
+        </div>
+
+        <div class="content-area container">
+            <div class="party-people row">
+                <h2 class="party-people__title subheading-font text-center">The Wedding Party</h2>
+                <div class="party-person party-person--abe col-sm-6 col-md-3">
+                    <div class="party-person__ring">
+                        <div class="party-person__img"></div>
+                    </div>
+                    <h3 class="party-person__name heading-font">Abe Weinograd</h3>
+                    <h4 class="party-person__role heading-font">groomsman</h4>
+                </div>
+                <div class="party-person party-person--joe col-sm-6 col-md-3">
+                    <div class="party-person__ring">
+                        <div class="party-person__img"></div>
+                    </div>
+                    <h3 class="party-person__name heading-font">Joe Weinograd</h3>
+                    <h4 class="party-person__role heading-font">groomsman</h4>
+                </div>
+                <div class="party-person party-person--cara col-sm-6 col-md-3">
+                    <div class="party-person__ring">
+                        <div class="party-person__img"></div>
+                    </div>
+                    <h3 class="party-person__name heading-font">Cara Sullivan</h3>
+                    <h4 class="party-person__role heading-font">maid of honor</h4>
+                </div>
+                <div class="party-person party-person--caroline col-sm-6 col-md-3">
+                    <div class="party-person__ring">
+                        <div class="party-person__img"></div>
+                    </div>
+                    <h3 class="party-person__name heading-font">Caroline Novak</h3>
+                    <h4 class="party-person__role heading-font">bridesmaid</h4>
+                </div>
             </div>
         </div>
 
         {% if site.github %}
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         {% else %}
-        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
         {% endif %}
     </body>
 

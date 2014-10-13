@@ -25,15 +25,43 @@ html {
     line-height: 1.4;
 }
 
+@media screen and (min-width: 40rem) {
+    html {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width: 64.1rem) {
+    html {
+        font-size: 1.375em;
+    }
+}
+
 html, body {
     height: 100%;
 }
 
 body {
-    background-image: url(../images/bg-katecharlie-lake.jpg);
-    background-position: center right;
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-size: 1em;
+}
+
+
+/**
+ * Headings
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+
+/**
+ * Vertical rhythm
+ */
+
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 

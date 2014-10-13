@@ -1,4 +1,29 @@
 /*------------------------------------*\
+    #CONTAINER
+\*------------------------------------*/
+
+.content-area {
+    max-width: 960px;
+    background-color: $color-background-fallback;
+    background-color: $color-background;
+    box-shadow: 0px 1px 1px rgba(#111,0.5);
+    margin-bottom: 3rem;
+    padding: 30px;
+}
+
+.background {
+    background-image: url(../images/bg-katecharlie-lake.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+/*------------------------------------*\
     #SPLASH-BOX
 \*------------------------------------*/
 
@@ -41,9 +66,7 @@
 
 .title-box {
     color: #fff;
-    font-size: 1.2rem;
     text-align: center;
-
 
     /**
      * hide title-box while fonts load
@@ -72,7 +95,7 @@
          */
 
         position: relative;
-        &::before {
+        &:before {
             content: "";
             display: block;
             position: absolute;
@@ -85,15 +108,9 @@
     }
 }
 
-@media screen and (min-width: 64.1rem) {
-    .title-box {
-        font-size: 1.4rem;
-    }
-}
-
     .title-box__title {
         line-height: 1.2em;
-        margin-top: 0;
+        margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
@@ -110,12 +127,67 @@
 
     .title-box__subtitle {
         font-size: 1.6em;
-        margin-top: 0;
-        margin-bottom: 2rem;
+        margin-top: 1.1rem;
+        margin-bottom: 1.333rem;
     }
 
     .title-box__more-info {
-        font-size: 1em;
+        // font-size: 1em;
         margin-top: 0;
         margin-bottom: 0;
     }
+
+
+/*------------------------------------*\
+    #PARTY-PEOPLE
+\*------------------------------------*/
+
+.party-person {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+    .party-people__title {
+        font-size: 2em;
+        margin-top: 0.5rem;
+        margin-bottom: 1.333rem;
+    }
+
+.party-person__ring {
+    display: inline-block;
+    // border: 1px $color-border solid;
+    box-shadow: 0px 0px 2px rgba(#111,0.5);
+    padding: 0.667em;
+    border-radius: 50%;
+}
+
+    .party-person__img {
+        width: 166px;
+        height: 166px;
+        border-radius: 50%;
+        background-image: url(../images/wedding-party.jpg);
+        background-repeat: no-repeat;
+        background-size: 200%;
+        .party-person--abe & {
+            background-position: top left;
+        }
+        .party-person--joe & {
+            background-position: top right;
+        }
+        .party-person--cara & {
+            background-position: bottom left;
+        }
+        .party-person--caroline & {
+            background-position: bottom right;
+        }
+    }
+
+.party-person__name {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.party-person__role {
+    margin-bottom: 1.5em
+}
+

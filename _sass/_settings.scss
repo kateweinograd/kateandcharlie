@@ -2,6 +2,11 @@
     #SETTINGS
 \*------------------------------------*/
 
+$color-background-fallback: #fff;
+$color-background: rgba(#fff, 0.95);
+$color-border: #ccc;
+$color-copy: #231F20;
+
 $fonts-serif: "Playfair Display", Georgia, serif;
 $fonts-sans: nimbus-sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $fonts-cursive: monmica-regular, cursive;
