@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="{{site.github.url}}/css/styles.css">
 
         {% if site.github %}
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js"></script>
         {% else %}
         <script src="bower_components/components-webfontloader/webfont.js"></script>
@@ -45,17 +46,21 @@
     <body>
         <div class="background"></div>
 
-        <div class="splash-box">
-            <div class="splash-box__content title-box">
+        <div class="flex-center splash-box">
+            <div class="js-fade-on-scroll title-box">
                 <h1 class="title-box__title title-font">Kate <span class="title-box__amp">&amp;</span> Charlie</h1>
                 <p class="title-box__subtitle subtitle-font">April 25, 2015</p>
                 <!-- <h2 class="title-box__more-info splash-box__coming-soon subheading-font">More info to come.</h2> -->
             </div>
         </div>
 
-        <div class="content-area container">
-            <div class="party-people row">
-                <h2 class="party-people__title subheading-font text-center">The Wedding Party</h2>
+        <main class="js-scroll-target content-area container">
+            <section class="row">
+                <h2 class="section-title subheading-font text-center">Who/What/Where</h2>
+            </section>
+
+            <section class="row">
+                <h2 class="section-title subheading-font text-center">The Wedding Party</h2>
                 <div class="party-person party-person--abe col-sm-6 col-md-3">
                     <div class="party-person__ring">
                         <div class="party-person__img"></div>
@@ -84,14 +89,37 @@
                     <h3 class="party-person__name heading-font">Caroline Novak</h3>
                     <h4 class="party-person__role heading-font">bridesmaid</h4>
                 </div>
-            </div>
-        </div>
+            </section>
+
+            <section class="row">
+                <h2 class="section-title subheading-font text-center">Logistics</h2>
+            </section>
+
+            <section class="row">
+                <h2 class="section-title subheading-font text-center">Registries</h2>
+                <div class="flex-center registry">
+                    <a class="registry__link heading-font" href="http://www.bloomingdales.com/registry/wedding/guest/?registryId=6120875">Bloomingdale<span class="cursive-font">'</span>s</a>
+                </div>
+                <div class="flex-center registry">
+                    <a class="registry__link heading-font" href="http://www.crateandbarrel.com/Gift-Registry/kate-sullivan-and-charlie-weinograd/r5238493">Crate <span class="cursive-font registry__amp">&amp;</span> Barrel</a>
+                </div>
+                <div class="flex-center registry">
+                    <a class="registry__link heading-font" href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541624995">Bed Bath <span class="cursive-font registry__amp">&amp;</span> Beyond</a>
+                </div>
+            </section>
+
+            <section class="row">
+                <h2 class="section-title subheading-font text-center">RSVP</h2>
+            </section>
+        </main>
 
         {% if site.github %}
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         {% else %}
+        <script src="bower_components/underscore/underscore.js"></script>
         <script src="bower_components/jquery/dist/jquery.js"></script>
         {% endif %}
+        <script src="{{site.github.url}}/js/scripts.js"></script>
     </body>
 
 </html>
