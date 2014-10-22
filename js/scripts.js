@@ -136,6 +136,7 @@ var kateAndCharlieDotCom = function($, window, document, undefined) {
 
   var $window = $('window'),
   $body       = $('body'),
+  $modals     = $('.js-modal'),
   $navLinks   = $('.js-scroll-to a'),
   $overlay    = $('.overlay.overlay-slidedown'),
   $titleBox   = $('.js-fade-on-scroll');
@@ -214,10 +215,17 @@ var kateAndCharlieDotCom = function($, window, document, undefined) {
     }
   }
 
+  function fancyBoxInit() {
+    $modals.fancybox({
+      fixed: false
+    });
+  }
+
   return {
     init: function() {
       navScrollToInit();
       fadeTitleOnLoad();
+      fancyBoxInit();
       $(window).scroll( _.throttle(fadeTitleOnScroll, 10) );
       $(window).resize( _.throttle(fadeTitleOnScroll, 100) );
     },
