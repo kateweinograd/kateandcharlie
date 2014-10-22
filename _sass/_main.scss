@@ -40,6 +40,10 @@
     margin-bottom: 0.667rem;
 }
 
+.sub-section {
+    margin-bottom: 1rem;
+}
+
 .section-title {
     font-size: 2em;
     margin-top: 0.5rem;
@@ -243,6 +247,18 @@
     #LOGISTICS
 \*------------------------------------*/
 
+.hotel-section {
+    margin-bottom: 2.5rem;
+}
+
+.hotel-block {
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+    padding: 2em 1.5em;
+}
+
+
 .logistics-map {
     width: 100%;
     height: auto;
@@ -333,6 +349,7 @@
     font-size: 0.8rem;
 }
 
-.sub-section {
-    margin-bottom: 1rem;
-}
+    .schedule__heading {
+        margin-top: 1.5rem;
+    }
+
