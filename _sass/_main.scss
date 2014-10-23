@@ -303,16 +303,16 @@
 
 .registry {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
     .registry__link {
         display: inline-block;
         width: 9em;
-        height: 9em;
+        height: 5.5em;
         border-radius: 6px;
         font-size: 1em;
-        line-height: 1.4;
+        line-height: 1.2;
         margin-bottom: 1.5rem;
         background-color: #fff;
         border: 1px #ccc solid;
@@ -332,20 +332,23 @@
         display: inline-block;
 
         .registry--bloomingdales & {
-            padding-top: 3.7em;
+            padding-top: 1.9em;
         }
 
         .registry--crate-and-barrel & {
-            padding-top: 2.4em;
+            padding-top: 1.1em;
         }
 
         .registry--bed-bath-and-beyond & {
-            padding-top: 2.5em;
+            padding-top: 1.1em;
         }
     }
 
     .registry__amp {
         display: block;
+        position: relative;
+        margin-top: -3px;
+        margin-bottom: 1px;
     }
 
 
