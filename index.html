@@ -2,7 +2,7 @@
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
     <head>
         <head>
@@ -30,11 +30,8 @@
             {% endif %}
             <script>
                 WebFont.load({
-                    custom: {
-                        families: ['monmica-regular']
-                    },
                     google: {
-                        families: ['Playfair+Display','Alegreya+SC']
+                        families: ['Playfair+Display','Muli','Engagement','Alegreya+SC']
                     }
                 });
             </script>
@@ -72,14 +69,27 @@
             </div>
 
             <main class="js-scroll-target content-area container">
+
+                <div class="text-center arrow-holder js-scroll-to">
+                    <div class="scroll-arrow copy-font">
+                        <a href="#wedding-details">&#187;</a>
+                    </div>
+                </div>
+
                 <section id="wedding-details" class="section row text-center">
                     <div class="col-sm-offset-2 col-sm-8 copy-font">
+                        <div class="intro-img shadow">
+                            <a class="js-modal clearfix" href="../images/katecharlie-walk.jpg">
+                                <img class="resp-img" src="../images/katecharlie-walk-4x3.jpg"
+                                    alt="Kate &amp; Charlie on a walk." title="Click to zoom">
+                            </a>
+                        </div>
                         <p>
                             Please join us to celebrate the wedding of Kate Sullivan and Charles Weinograd. The ceremony and reception will take place at the historic Woman’s Club of Evanston, located in downtown Evanston. It is a short walk from both the Orrington Hotel and Hilton Garden Inn.
                         </p>
 
                         <div class="schedule">
-                            <h3 class="cursive-font schedule__heading"><strong>Friday, April 24th</strong></h3>
+                            <h3 class="heading-font schedule__heading">Friday, April 24th</h3>
                             <p>
                                 8:00 PM - Welcome Party<br>
                                 Smylie Brothers Brewery<br>
@@ -88,10 +98,10 @@
                                 <a href="https://encrypted.google.com/maps/dir/''/Smylie+Brothers+Brewery/data=!4m5!4m4!1m0!1m2!1m1!1s0x880fd00f0ad963d1:0xd65009cc2f51e2b7">Directions</a>
                             </p>
 
-                            <h3 class="cursive-font schedule__heading"><strong>Saturday, April 25th</strong></h3>
+                            <h3 class="heading-font schedule__heading">Saturday, April 25th</h3>
                             <p>
                                 6:00 PM - Ceremony and Reception<br>
-                                The Woman’s Club of Evanston<br>
+                                Woman’s Club of Evanston<br>
                                 1702 Chicago Avenue<br>
                                 <a href="http://www.wcofe.org/">Website</a> -
                                 <a href="https://encrypted.google.com/maps/dir/''/The+Woman's+Club+of+Evanston/@42.0480809,-87.7136078,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x880fd00cddaabd41:0x8115564a2e1112a0!2m2!1d-87.679275!2d42.048086">Directions</a>
@@ -104,7 +114,7 @@
                                 <a href="https://encrypted.google.com/maps/dir/''/Tommy+Nevin's+Pub+1450+Sherman+Avenue+map/@42.0444159,-87.7165608,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x880fd0120564dacd:0xa7c55fb25bf856ff!2m2!1d-87.682228!2d42.044421">Directions</a>
                             </p>
 
-                            <h3 class="cursive-font schedule__heading"><strong>Sunday, April 26th</strong></h3>
+                            <h3 class="heading-font schedule__heading">Sunday, April 26th</h3>
                             <p>
                                 10:00 AM-12:00 PM - Sunday Brunch<br>
                                 Location TBD
@@ -149,7 +159,7 @@
                     <h2 class="section-title subheading-font text-center">Logistics</h2>
 
                     <div class="sub-section text-center copy-font col-sm-offset-1 col-sm-10">
-                        <h3 class="cursive-font"><strong>Transportation</strong></h3>
+                        <h3 class="heading-font subsection-title">Transportation</h3>
                         <p>
                             Evanston is 17 miles from O’Hare Airport, approximately 35 minutes by cab. Midway Airport is 27 miles away from Evanston, and the trip takes approximately 50 minutes by cab. Evanston is also accessible by the CTA subway (the “L”) and the Metra train. Both trains stop at the Davis Street stop, which is walking distance to the Orrington Hotel and the Hilton Garden Inn.
                         </p>
@@ -159,7 +169,7 @@
                     </div>
 
                     <div class="hotel-section text-center copy-font col-sm-offset-1 col-sm-10">
-                        <h3 class="cursive-font"><strong>Hotels</strong></h3>
+                        <h3 class="heading-font subsection-title">Hotels</h3>
                         <div class="row">
                             <div class="col-sm-6 clearfix">
                                 <div class="shadow hotel-block hotel-block--orrington">
@@ -188,10 +198,10 @@
                         </div>
                     </div>
 
-                    <div class="sub-section text-center cursive-font col-sm-offset-1 col-sm-10">
-                        <h3 class="cursive-font"><strong>Map of Evanston</strong></h3>
+                    <div class="sub-section text-center heading-font col-sm-offset-1 col-sm-10">
+                        <h3 class="heading-font subsection-title">Map of Evanston</h3>
                         <a class="js-modal" href="{{site.github.url}}/images/evanston-map.png">
-                            <img class="logistics-map shadow"
+                            <img class="resp-img logistics-map shadow"
                             src="{{site.github.url}}/images/evanston-map.png" alt="Wedding Map"  title="Click to zoom">
                         </a>
                     </div>
@@ -203,7 +213,7 @@
                         <a class="btn registry__link heading-font"
                             href="http://www.bloomingdales.com/registry/wedding/guest/?registryId=6120875">
                             <span class="registry__text">
-                                Bloomingdale<span class="cursive-font">'</span>s
+                                Bloomingdale<span class="heading-font">'</span>s
                             </span>
                         </a>
                     </div>
@@ -211,7 +221,7 @@
                         <a class="registry__link heading-font"
                             href="http://www.crateandbarrel.com/Gift-Registry/kate-sullivan-and-charlie-weinograd/r5238493">
                             <span class="registry__text">
-                                Crate <span class="cursive-font registry__amp">&amp;</span> Barrel
+                                Crate <span class="heading-font registry__amp">&amp;</span> Barrel
                             </span>
                         </a>
                     </div>
@@ -219,7 +229,7 @@
                         <a class="registry__link heading-font"
                             href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541624995">
                             <span class="registry__text">
-                                Bed Bath <span class="cursive-font registry__amp">&amp;</span> Beyond
+                                Bed Bath <span class="heading-font registry__amp">&amp;<span> Beyond
                             </span>
                         </a>
                     </div>
@@ -268,12 +278,12 @@
                                 <span class="radio">
                                     <input id="Field4_0" name="Field4" type="radio"
                                     value="Yes" tabindex="4" checked="checked" required>
-                                    <label class="cursive-font choice" for="Field4_0" >Yes</label>
+                                    <label class="heading-font choice" for="Field4_0" >Yes</label>
                                 </span>
                                 <span class="radio">
                                     <input id="Field4_1" name="Field4" type="radio"
                                     value="No" tabindex="5" required>
-                                    <label class="cursive-font choice" for="Field4_1" >No</label>
+                                    <label class="heading-font choice" for="Field4_1" >No</label>
                                 </span>
                             </div>
                         </fieldset>
@@ -287,12 +297,12 @@
                                 <span class="radio">
                                     <input id="Field5_0" name="Field5" type="radio"
                                     value="Yes" tabindex="6" checked="checked" required>
-                                    <label class="cursive-font choice" for="Field5_0" >Yes</label>
+                                    <label class="heading-font choice" for="Field5_0" >Yes</label>
                                 </span>
                                 <span class="radio">
                                     <input id="Field5_1" name="Field5" type="radio"
                                     value="No" tabindex="7" required>
-                                    <label class="cursive-font choice" for="Field5_1" >No</label>
+                                    <label class="heading-font choice" for="Field5_1" >No</label>
                                 </span>
                             </div>
                         </fieldset>
@@ -309,7 +319,7 @@
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-8">
-                                <input id="saveForm" name="saveForm" class="cursive-font btn btn-default" type="submit" value="Submit">
+                                <input id="saveForm" name="saveForm" class="heading-font btn btn-default" type="submit" value="Submit">
                             </div>
                         </div>
 
@@ -335,6 +345,10 @@
                     </ul>
                 </nav>
             </div>
+            <!--[if lte IE 9]>
+            <script>
+            </script>
+            <![endif]-->
             {% if site.github %}
             <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
             <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
