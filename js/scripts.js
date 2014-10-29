@@ -179,7 +179,11 @@ var kateAndCharlieDotCom = function($, window, document, undefined) {
       if ( scrollLink === "#home" ) {
         scrollHere = 0;
       } else {
-        scrollHere = $(scrollLink).position().top + windowHeight;
+        if ( Modernizr.touch ) {
+          scrollHere = $(scrollLink).position().top;
+        } else {
+          scrollHere = $(scrollLink).position().top + windowHeight;
+        }
       }
       $('html,body').animate(
         { scrollTop: scrollHere },
@@ -251,11 +255,13 @@ var kateAndCharlieDotCom = function($, window, document, undefined) {
 
   return {
     init: function() {
-      navScrollToInit();
       fadeTitleOnLoad();
       fancyBoxInit();
-      $(window).scroll( _.throttle(fadeTitleOnScroll, 10) );
-      $(window).resize( _.throttle(fadeTitleOnScroll, 100) );
+      navScrollToInit();
+      if ( ! Modernizr.touch ) {
+        $(window).scroll( _.throttle(fadeTitleOnScroll, 10) );
+        $(window).resize( _.throttle(fadeTitleOnScroll, 100) );
+      }
     },
     initAfterLoad: function() {
       console.log('May you live as long as you want and never want as long as you live.');

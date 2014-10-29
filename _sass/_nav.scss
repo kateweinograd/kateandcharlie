@@ -7,6 +7,9 @@
     padding: 5%;
     top: 0;
     right: 0;
+    .touch & {
+        position: absolute;
+    }
 }
 
 @media (min-width: 30rem) {

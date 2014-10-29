@@ -2,6 +2,13 @@
     #CONTAINER
 \*------------------------------------*/
 
+.touch body {
+    background-image: url(../images/bg-katecharlie-lake.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .background {
     background-image: url(../images/bg-katecharlie-lake.jpg);
     background-position: center right;
@@ -12,6 +19,9 @@
     height: 100%;
     width: 100%;
     z-index: -1;
+    .touch & {
+        display: none;
+    }
 }
 
 .content-area {
@@ -24,6 +34,13 @@
     position: relative;
     top: 100%;
     border-radius: 2px;
+    .touch & {
+        position: static;
+        top: 0;
+        width: 100%;
+        max-width: none;
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 768px) {
@@ -34,6 +51,11 @@
 
 .section {
     margin-bottom: 2rem;
+    .touch & {
+      max-width: 855px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 .section--short {
@@ -70,11 +92,17 @@
 }
 
 .arrow-holder {
-    position: absolute;
-    top: -4em;
+    position: fixed;
+    bottom: 0;
     left: 0px;
     text-align: center;
     width: 100%;
+    .touch & {
+        position: absolute;
+    }
+    .below-the-fold & {
+        display: none;
+    }
 }
 
 .scroll-arrow {
@@ -87,7 +115,7 @@
             transform:rotate(90deg);
     a {
         color: $color-background-fallback;
-        color: $color-background;
+        color: rgba(#fff,0.85);
         transition: color 200ms;
         &:hover, &:active, &:focus {
             text-decoration: none;
@@ -139,6 +167,9 @@
     width: 100%;
     margin: 0;
     padding: 5%;
+    .touch & {
+        position: static;
+    }
 }
 
 @media screen and (min-width: 30rem) {
