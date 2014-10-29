@@ -162,6 +162,7 @@ var kateAndCharlieDotCom = function($, window, document, undefined) {
   'use strict';
 
   var $window = $('window'),
+  $html       = $('html'),
   $body       = $('body'),
   $modals     = $('.js-modal'),
   $navLinks   = $('.js-scroll-to a'),
@@ -203,7 +204,7 @@ var kateAndCharlieDotCom = function($, window, document, undefined) {
   // fade and scroll .title-box as .content-area scrolls up
   function fadeTitleOnScroll() {
     var windowHeight     = $(window).height(),
-    contentAreaTop   = $body.scrollTop();
+        contentAreaTop   = Math.max($html.scrollTop(),$body.scrollTop());
 
     if ( contentAreaTop >= windowHeight - 150 ) {
       $body.addClass('below-the-fold');
