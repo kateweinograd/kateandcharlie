@@ -1,0 +1,85 @@
+/*------------------------------------*\
+    #INTERNET-EXPLORER
+\*------------------------------------*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.warning-background {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #323330;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+    z-index: 99998;
+    top: 0;
+    left: 0;
+}
+
+.warning-background-no-js {
+    display: block;
+}
+
+.warning-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 548px;
+    width: 500px;
+    margin-top: -274px;
+    margin-left: -250px;
+    text-align: center;
+    border-radius: 7px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    z-index: 99999;
+}
+
+.warning-modal a {
+    text-decoration: underline;
+}
+
+.warning-modal-lt-ie9 {
+    background-color: #00CCFF;
+    color: #FFF;
+}
+
+.warning-modal-lt-ie9 a {
+    color: #FFF;
+}
+
+.warning-modal-no-js {
+    display: block;
+    background-color: #F0DB4F;
+    color: #323330;
+}
+
+.warning-modal-no-js a {
+    color: #323330;
+}
+
+.warning-modal-title {
+    margin: 0 40px;
+    padding: 40px 20px;
+    font-size: 66px;
+    line-height: 66px;
+}
+
+.warning-modal-message {
+    margin: 0 40px;
+    border-top: 1px dotted #323330;
+    padding: 40px 20px 0;
+    font-size: 39px;
+    line-height: 1.25;
+}
+

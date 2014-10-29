@@ -2,357 +2,393 @@
 ---
 
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" class="no-js">
 
     <head>
-        <head>
-            <title>Kate &amp; Charlie</title>
-            <meta charset="utf-8">
-            <meta name="description" content="Help celebrate the wedding of Kate Sullivan and Charles Weinograd at the Women's Club of Evanston in Evanston, IL on April 25, 2015.">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="shortcut icon" href="{{site.github.url}}/images/favicon.ico">
-            <link rel="apple-touch-icon" href="{{site.github.url}}/images/apple-touch-icon.png">
+        <title>Kate &amp; Charlie</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Help celebrate the wedding of Kate Sullivan and Charles Weinograd at the Women's Club of Evanston in Evanston, IL on April 25, 2015.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="{{site.github.url}}/images/favicon.ico">
+        <link rel="apple-touch-icon" href="{{site.github.url}}/images/apple-touch-icon.png">
 
-            {% if site.github %}
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
-            {% else %}
-            <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-            <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
-            {% endif %}
-            <link rel="stylesheet" href="{{site.github.url}}/css/styles.css">
+        {% if site.github %}
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+        {% else %}
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
+        {% endif %}
+        <link rel="stylesheet" href="{{site.github.url}}/css/styles.css">
 
-            <script src="{{site.github.url}}/js/vendor/modernizr.js"></script>
-            {% if site.github %}
-            <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js"></script>
-            {% else %}
-            <script src="bower_components/components-webfontloader/webfont.js"></script>
-            {% endif %}
-            <script>
-                WebFont.load({
-                    google: {
-                        families: ['Playfair+Display','Muli','Engagement','Alegreya+SC']
-                    }
-                });
-            </script>
-        </head>
+        <script src="{{site.github.url}}/js/vendor/modernizr.js"></script>
+        {% if site.github %}
+        <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js"></script>
+        {% else %}
+        <script src="bower_components/components-webfontloader/webfont.js"></script>
+        {% endif %}
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Playfair+Display','Muli','Engagement','Alegreya+SC']
+                }
+            });
+        </script>
+    </head>
 
-        <body id="home">
-            <div class="background">
+    <body id="home">
+        <div class="background">
+        </div>
+
+        <div class="flex-center splash-box">
+            <div class="js-fade-on-scroll title-box">
+                <h1 class="title-box__title title-font">
+                    Kate <span class="title-box__amp">&amp;</span> Charlie
+                </h1>
+                <p class="title-box__subtitle subtitle-font">April 25, 2015</p>
             </div>
+        </div>
 
-            <div class="flex-center splash-box">
-                <div class="js-fade-on-scroll title-box">
-                    <h1 class="title-box__title title-font">
-                        Kate <span class="title-box__amp">&amp;</span> Charlie
-                    </h1>
-                    <p class="title-box__subtitle subtitle-font">April 25, 2015</p>
+        <div class="nav">
+            <a class="js-overlay-trigger navbar-toggle" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <nav class="left-nav js-scroll-to">
+                <ul class="list-unstyled subheading-font">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#wedding-details">Details</a></li>
+                    <li><a href="#wedding-party">Wedding Party</a></li>
+                    <li><a href="#logistics">Logistics</a></li>
+                    <li><a href="#rsvp">RSVP</a></li>
+                    <li><a href="#registries">Registries</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="js-scroll-target content-area container">
+
+            <div class="text-center arrow-holder js-scroll-to">
+                <div class="scroll-arrow copy-font">
+                    <a href="#wedding-details">&#187;</a>
                 </div>
             </div>
 
-            <div class="nav">
-                <a class="js-overlay-trigger navbar-toggle" type="button">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <nav class="left-nav js-scroll-to">
-                    <ul class="list-unstyled subheading-font">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#wedding-details">Details</a></li>
-                        <li><a href="#wedding-party">Wedding Party</a></li>
-                        <li><a href="#logistics">Logistics</a></li>
-                        <li><a href="#rsvp">RSVP</a></li>
-                        <li><a href="#registries">Registries</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <main class="js-scroll-target content-area container">
-
-                <div class="text-center arrow-holder js-scroll-to">
-                    <div class="scroll-arrow copy-font">
-                        <a href="#wedding-details">&#187;</a>
-                    </div>
-                </div>
-
-                <section id="wedding-details" class="section row text-center">
-                    <div class="col-sm-offset-2 col-sm-8 copy-font">
-                        <div class="intro-img shadow">
-                            <a class="js-modal clearfix" href="../images/katecharlie-walk.jpg">
-                                <img class="resp-img" src="../images/katecharlie-walk-4x3.jpg"
-                                    alt="Kate &amp; Charlie on a walk." title="Click to zoom">
-                            </a>
-                        </div>
-                        <p>
-                            Please join us to celebrate the wedding of Kate Sullivan and Charles Weinograd. The ceremony and reception will take place at the historic Woman’s Club of Evanston, located in downtown Evanston. It is a short walk from both the Orrington Hotel and Hilton Garden Inn.
-                        </p>
-
-                        <div class="schedule">
-                            <h3 class="heading-font schedule__heading">Friday, April 24th</h3>
-                            <p>
-                                8:00 PM - Welcome Party<br>
-                                Smylie Brothers Brewery<br>
-                                1615 Oak Avenue<br>
-                                <a href="http://www.smyliebros.com/">Website</a> -
-                                <a href="https://encrypted.google.com/maps/dir/''/Smylie+Brothers+Brewery/data=!4m5!4m4!1m0!1m2!1m1!1s0x880fd00f0ad963d1:0xd65009cc2f51e2b7">Directions</a>
-                            </p>
-
-                            <h3 class="heading-font schedule__heading">Saturday, April 25th</h3>
-                            <p>
-                                6:00 PM - Ceremony and Reception<br>
-                                Woman’s Club of Evanston<br>
-                                1702 Chicago Avenue<br>
-                                <a href="http://www.wcofe.org/">Website</a> -
-                                <a href="https://encrypted.google.com/maps/dir/''/The+Woman's+Club+of+Evanston/@42.0480809,-87.7136078,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x880fd00cddaabd41:0x8115564a2e1112a0!2m2!1d-87.679275!2d42.048086">Directions</a>
-                            </p>
-                            <p>
-                                Midnight - After Party<br>
-                                Tommy Nevin's Pub<br>
-                                1450 Sherman Avenue<br>
-                                <a href="http://www.tommynevins.com/">Website</a> -
-                                <a href="https://encrypted.google.com/maps/dir/''/Tommy+Nevin's+Pub+1450+Sherman+Avenue+map/@42.0444159,-87.7165608,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x880fd0120564dacd:0xa7c55fb25bf856ff!2m2!1d-87.682228!2d42.044421">Directions</a>
-                            </p>
-
-                            <h3 class="heading-font schedule__heading">Sunday, April 26th</h3>
-                            <p>
-                                10:00 AM-12:00 PM - Sunday Brunch<br>
-                                Location TBD
-                            </p>
-                        </div>
-                    </section>
-
-                    <section id="wedding-party" class="section--short row">
-                        <h2 class="section-title subheading-font text-center">The Wedding Party</h2>
-                        <div class="party-person party-person--abe col-sm-6">
-                            <div class="shadow party-person__ring">
-                                <div class="party-person__img"></div>
-                            </div>
-                            <h3 class="party-person__name heading-font">Abe Weinograd</h3>
-                            <h4 class="party-person__role heading-font">groomsman</h4>
-                        </div>
-                        <div class="party-person party-person--joe col-sm-6">
-                            <div class="shadow party-person__ring">
-                                <div class="party-person__img"></div>
-                            </div>
-                            <h3 class="party-person__name heading-font">Joe Weinograd</h3>
-                            <h4 class="party-person__role heading-font">groomsman</h4>
-                        </div>
-                        <div class="party-person party-person--cara col-sm-6">
-                            <div class="shadow party-person__ring">
-                                <div class="party-person__img"></div>
-                            </div>
-                            <h3 class="party-person__name heading-font">Cara Sullivan</h3>
-                            <h4 class="party-person__role heading-font">maid of honor</h4>
-                        </div>
-                        <div class="party-person party-person--caroline col-sm-6">
-                            <div class="shadow party-person__ring">
-                                <div class="party-person__img"></div>
-                            </div>
-                            <h3 class="party-person__name heading-font">Caroline Novak</h3>
-                            <h4 class="party-person__role heading-font">bridesmaid</h4>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="logistics" class="section row">
-                    <h2 class="section-title subheading-font text-center">Logistics</h2>
-
-                    <div class="sub-section text-center copy-font col-sm-offset-1 col-sm-10">
-                        <h3 class="heading-font subsection-title">Transportation</h3>
-                        <p>
-                            Evanston is 17 miles from O’Hare Airport, approximately 35 minutes by cab. Midway Airport is 27 miles away from Evanston, and the trip takes approximately 50 minutes by cab. Evanston is also accessible by the CTA subway (the “L”) and the Metra train. Both trains stop at the Davis Street stop, which is walking distance to the Orrington Hotel and the Hilton Garden Inn.
-                        </p>
-                        <p>
-                            Information on both trains can be found at the <a href="http://www.transitchicago.com/">Chicago Transit Authority</a> and <a href="http://metrarail.com/metra/en/home.html">Metra</a> websites. Shuttles are also available to both <a href="http://www.airportexpress.com/ohare_shared_ride_shuttle">O’Hare</a> and <a href="http://www.airportexpress.com/midway_shared_ride_shuttle">Midway Airports</a>.
-                        </p>
-                    </div>
-
-                    <div class="hotel-section text-center copy-font col-sm-offset-1 col-sm-10">
-                        <h3 class="heading-font subsection-title">Hotels</h3>
-                        <div class="row">
-                            <div class="col-sm-6 clearfix">
-                                <div class="shadow hotel-block hotel-block--orrington">
-                                    <div class="hotel-block__info">
-                                        The Orrington Hotel<br>
-                                        1710 Orrington Avenue<br>
-                                        (847) 866-8700<br>
-                                        Group Code: SWW<br>
-                                        <a href="http://www.hilton.com/en/hi/groups/personalized/O/ORDOEHF-SWW-20150422/index.jhtml">Book Online</a> -
-                                        <a href="https://encrypted.google.com/maps/dir//Hilton+Orrington%2FEvanston,+1710+Orrington+Ave,+Evanston,+IL+60201/@42.049081,-87.680822,17z/data=!3m1!5s0x880fd00c64420705:0xbb811745a9411c45!4m12!1m3!3m2!1s0x880fd00c6293d455:0x792fcbd73323326f!2sHilton+Orrington%2FEvanston!4m7!1m0!1m5!1m1!1s0x880fd00c6293d455:0x792fcbd73323326f!2m2!1d-87.680822!2d42.049081">Directions</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 clearfix">
-                                <div class="shadow hotel-block hotel-block--hilton-garden">
-                                    <div class="hotel-block__info">
-                                        Hilton Garden Inn<br>
-                                        1818 Maple Avenue<br>
-                                        (847) 475-6400<br>
-                                        Group Code: WSW<br>
-                                        <a href="http://hiltongardeninn.hilton.com/en/gi/groups/personalized/O/ORDEVGI-WSW-20150422/index.jhtml">Book Online</a> -
-                                        <a href="https://encrypted.google.com/maps/dir/''/hilton+garden+inn+evanston+il+map/@42.0507979,-87.7194688,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x880fd0092f993435:0xa15972420b2603d7!2m2!1d-87.685136!2d42.050803">Directions</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="sub-section text-center heading-font col-sm-offset-1 col-sm-10">
-                        <h3 class="heading-font subsection-title">Map of Evanston</h3>
-                        <a class="js-modal" href="{{site.github.url}}/images/evanston-map.png">
-                            <img class="resp-img logistics-map shadow"
-                            src="{{site.github.url}}/images/evanston-map.png" alt="Wedding Map"  title="Click to zoom">
+            <section id="wedding-details" class="section row text-center">
+                <div class="col-sm-offset-2 col-sm-8 copy-font">
+                    <div class="intro-img shadow">
+                        <a class="js-modal clearfix" href="../images/katecharlie-walk.jpg">
+                            <img class="resp-img" src="../images/katecharlie-walk-4x3.jpg"
+                                alt="Kate &amp; Charlie on a walk." title="Click to zoom">
                         </a>
                     </div>
+                    <p>
+                        Please join us to celebrate the wedding of Kate Sullivan and Charles Weinograd. The ceremony and reception will take place at the historic Woman’s Club of Evanston, located in downtown Evanston. It is a short walk from both the Orrington Hotel and Hilton Garden Inn.
+                    </p>
+
+                    <div class="schedule">
+                        <h3 class="heading-font schedule__heading">Friday, April 24th</h3>
+                        <p>
+                            8:00 PM - Welcome Party<br>
+                            Smylie Brothers Brewery<br>
+                            1615 Oak Avenue<br>
+                            <a href="http://www.smyliebros.com/">Website</a> -
+                            <a href="https://encrypted.google.com/maps/dir/''/Smylie+Brothers+Brewery/data=!4m5!4m4!1m0!1m2!1m1!1s0x880fd00f0ad963d1:0xd65009cc2f51e2b7">Directions</a>
+                        </p>
+
+                        <h3 class="heading-font schedule__heading">Saturday, April 25th</h3>
+                        <p>
+                            6:00 PM - Ceremony and Reception<br>
+                            Woman’s Club of Evanston<br>
+                            1702 Chicago Avenue<br>
+                            <a href="http://www.wcofe.org/">Website</a> -
+                            <a href="https://encrypted.google.com/maps/dir/''/The+Woman's+Club+of+Evanston/@42.0480809,-87.7136078,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x880fd00cddaabd41:0x8115564a2e1112a0!2m2!1d-87.679275!2d42.048086">Directions</a>
+                        </p>
+                        <p>
+                            Midnight - After Party<br>
+                            Tommy Nevin's Pub<br>
+                            1450 Sherman Avenue<br>
+                            <a href="http://www.tommynevins.com/">Website</a> -
+                            <a href="https://encrypted.google.com/maps/dir/''/Tommy+Nevin's+Pub+1450+Sherman+Avenue+map/@42.0444159,-87.7165608,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x880fd0120564dacd:0xa7c55fb25bf856ff!2m2!1d-87.682228!2d42.044421">Directions</a>
+                        </p>
+
+                        <h3 class="heading-font schedule__heading">Sunday, April 26th</h3>
+                        <p>
+                            10:00 AM-12:00 PM - Sunday Brunch<br>
+                            Location TBD
+                        </p>
+                    </div>
                 </section>
 
-                <section id="rsvp" class="section row">
-                    <h2 class="section-title section-title--short subheading-font text-center">RSVP</h2>
+                <section id="wedding-party" class="section--short row">
+                    <h2 class="section-title subheading-font text-center">The Wedding Party</h2>
+                    <div class="party-person party-person--abe col-sm-6">
+                        <div class="shadow party-person__ring">
+                            <div class="party-person__img"></div>
+                        </div>
+                        <h3 class="party-person__name heading-font">Abe Weinograd</h3>
+                        <h4 class="party-person__role heading-font">groomsman</h4>
+                    </div>
+                    <div class="party-person party-person--joe col-sm-6">
+                        <div class="shadow party-person__ring">
+                            <div class="party-person__img"></div>
+                        </div>
+                        <h3 class="party-person__name heading-font">Joe Weinograd</h3>
+                        <h4 class="party-person__role heading-font">groomsman</h4>
+                    </div>
+                    <div class="party-person party-person--cara col-sm-6">
+                        <div class="shadow party-person__ring">
+                            <div class="party-person__img"></div>
+                        </div>
+                        <h3 class="party-person__name heading-font">Cara Sullivan</h3>
+                        <h4 class="party-person__role heading-font">maid of honor</h4>
+                    </div>
+                    <div class="party-person party-person--caroline col-sm-6">
+                        <div class="shadow party-person__ring">
+                            <div class="party-person__img"></div>
+                        </div>
+                        <h3 class="party-person__name heading-font">Caroline Novak</h3>
+                        <h4 class="party-person__role heading-font">bridesmaid</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section id="logistics" class="section row">
+                <h2 class="section-title subheading-font text-center">Logistics</h2>
+
+                <div class="sub-section text-center copy-font col-sm-offset-1 col-sm-10">
+                    <h3 class="heading-font subsection-title">Transportation</h3>
+                    <p>
+                        Evanston is 17 miles from O’Hare Airport, approximately 35 minutes by cab. Midway Airport is 27 miles away from Evanston, and the trip takes approximately 50 minutes by cab. Evanston is also accessible by the CTA subway (the “L”) and the Metra train. Both trains stop at the Davis Street stop, which is walking distance to the Orrington Hotel and the Hilton Garden Inn.
+                    </p>
+                    <p>
+                        Information on both trains can be found at the <a href="http://www.transitchicago.com/">Chicago Transit Authority</a> and <a href="http://metrarail.com/metra/en/home.html">Metra</a> websites. Shuttles are also available to both <a href="http://www.airportexpress.com/ohare_shared_ride_shuttle">O’Hare</a> and <a href="http://www.airportexpress.com/midway_shared_ride_shuttle">Midway Airports</a>.
+                    </p>
+                </div>
+
+                <div class="hotel-section text-center copy-font col-sm-offset-1 col-sm-10">
+                    <h3 class="heading-font subsection-title">Hotels</h3>
                     <div class="row">
-                        <p class="text-center copy-font col-sm-offset-2 col-sm-8">
-                            Please help us stay in touch and plan for your arrival by filling out the details below, once you have planned your travel and hotel arrangements.
-                        </p>
-                    </div>
-
-                    <form class="form-horizontal js-form-submit" role="form"
-                        accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
-                        action="https://kateweinograd.wufoo.com/forms/z160glbr0v1ertv/#public">
-
-                        <fieldset class="form-group">
-                            <label id="title1" for="Field1" class="subheading-font col-sm-offset-2 col-sm-8">Name</label>
-                            <div class="col-sm-offset-2 col-sm-3">
-                                <input id="Field1" name="Field1" type="text" class="field text fn form-control"
-                                value="" size="8" tabindex="1" placeholder="First" required>
-                                <label class="visuallyhidden" for="Field1">First</label>
-                            </div>
-                            <div class="col-sm-5">
-                                <input id="Field2" name="Field2" type="text" class="field text ln form-control"
-                                value="" size="14" tabindex="2" placeholder="Last" required>
-                                <label class="visuallyhidden" for="Field2">Last</label>
-                            </div>
-                        </fieldset>
-
-                        <fieldset class="form-group">
-                            <label id="title3" class="subheading-font col-sm-offset-2 col-sm-8" for="Field3">Email</label>
-                            <div class="col-sm-offset-2 col-sm-8">
-                                <input id="Field3" name="Field3" type="email" spellcheck="false" class="form-control"
-                                value="" maxlength="255" tabindex="3" required>
-                            </div>
-                        </fieldset>
-
-                        <fieldset class="form-group">
-                            <legend id="title6" class="subheading-font desc col-sm-offset-2 col-sm-8">
-                                attending friday night welcome event at smylie brothers brewing?
-                            </legend>
-                            <div class="form-inline col-sm-offset-2 col-sm-8">
-                                <input id="radioDefault_4" name="Field4" type="hidden" value="">
-                                <span class="radio">
-                                    <input id="Field4_0" name="Field4" type="radio"
-                                    value="Yes" tabindex="4" checked="checked" required>
-                                    <label class="heading-font choice" for="Field4_0" >Yes</label>
-                                </span>
-                                <span class="radio">
-                                    <input id="Field4_1" name="Field4" type="radio"
-                                    value="No" tabindex="5" required>
-                                    <label class="heading-font choice" for="Field4_1" >No</label>
-                                </span>
-                            </div>
-                        </fieldset>
-
-                        <fieldset class="form-group">
-                            <legend class="subheading-font desc col-sm-offset-2 col-sm-8">
-                                Attending Sunday Brunch?
-                            </legend>
-                            <div class="form-inline col-sm-offset-2 col-sm-8">
-                                <input id="radioDefault_5" name="Field5" type="hidden" value="">
-                                <span class="radio">
-                                    <input id="Field5_0" name="Field5" type="radio"
-                                    value="Yes" tabindex="6" checked="checked" required>
-                                    <label class="heading-font choice" for="Field5_0" >Yes</label>
-                                </span>
-                                <span class="radio">
-                                    <input id="Field5_1" name="Field5" type="radio"
-                                    value="No" tabindex="7" required>
-                                    <label class="heading-font choice" for="Field5_1" >No</label>
-                                </span>
-                            </div>
-                        </fieldset>
-
-                        <fieldset class="form-group">
-                            <label for="Field6" class="subheading-font desc col-sm-offset-2 col-sm-8">
-                                If traveling to Evanston, in which hotel will you be staying?
-                            </label>
-                            <div class="col-sm-offset-2 col-sm-8">
-                                <input id="Field6" name="Field6" type="text" class="form-control"
-                                value="" maxlength="255" tabindex="8" placeholder="" onkeyup="">
-                            </div>
-                        </fieldset>
-
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-8">
-                                <input id="saveForm" name="saveForm" class="heading-font btn btn-default" type="submit" value="Submit">
+                        <div class="col-sm-6 clearfix">
+                            <div class="shadow hotel-block hotel-block--orrington">
+                                <div class="hotel-block__info">
+                                    The Orrington Hotel<br>
+                                    1710 Orrington Avenue<br>
+                                    (847) 866-8700<br>
+                                    Group Code: SWW<br>
+                                    <a href="http://www.hilton.com/en/hi/groups/personalized/O/ORDOEHF-SWW-20150422/index.jhtml">Book Online</a> -
+                                    <a href="https://encrypted.google.com/maps/dir//Hilton+Orrington%2FEvanston,+1710+Orrington+Ave,+Evanston,+IL+60201/@42.049081,-87.680822,17z/data=!3m1!5s0x880fd00c64420705:0xbb811745a9411c45!4m12!1m3!3m2!1s0x880fd00c6293d455:0x792fcbd73323326f!2sHilton+Orrington%2FEvanston!4m7!1m0!1m5!1m1!1s0x880fd00c6293d455:0x792fcbd73323326f!2m2!1d-87.680822!2d42.049081">Directions</a>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="hide">
-                            <label for="comment">Do Not Fill This Out</label>
-                            <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-                            <input type="hidden" id="idstamp" name="idstamp" value="2RiHPGZbxMlFN/GMLW1VkCjPC7zVPmcyV0gj9lZkf8M=">
+                        <div class="col-sm-6 clearfix">
+                            <div class="shadow hotel-block hotel-block--hilton-garden">
+                                <div class="hotel-block__info">
+                                    Hilton Garden Inn<br>
+                                    1818 Maple Avenue<br>
+                                    (847) 475-6400<br>
+                                    Group Code: WSW<br>
+                                    <a href="http://hiltongardeninn.hilton.com/en/gi/groups/personalized/O/ORDEVGI-WSW-20150422/index.jhtml">Book Online</a> -
+                                    <a href="https://encrypted.google.com/maps/dir/''/hilton+garden+inn+evanston+il+map/@42.0507979,-87.7194688,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x880fd0092f993435:0xa15972420b2603d7!2m2!1d-87.685136!2d42.050803">Directions</a>
+                                </div>
+                            </div>
                         </div>
-                    </form>
-
-                </section>
-
-                <section id="registries" class="section--short row">
-                    <h2 class="section-title subheading-font text-center">Registries</h2>
-                    <div class="registry registry--bloomingdales col-sm-4">
-                        <a class="btn registry__link heading-font"
-                            href="http://www.bloomingdales.com/registry/wedding/guest/?registryId=6120875">
-                            <img class="registry__img" src="../images/logo-bloomingdales.svg" alt="We're registered at Bloomingdale's!">
-                        </a>
                     </div>
-                    <div class="registry registry--bed-bath-and-beyond col-sm-4">
-                      <a class="registry__link heading-font"
-                        href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541624995">
-                        <img class="registry__img" src="../images/logo-bed-bath-and-beyond.svg" alt="We're registered at Bed Bath &amp; Beyond!">
-                      </a>
-                    </div>
-                    <div class="registry registry--crate-and-barrel col-sm-4">
-                        <a class="registry__link heading-font"
-                            href="http://www.crateandbarrel.com/Gift-Registry/kate-sullivan-and-charlie-weinograd/r5238493">
-                            <img class="registry__img" src="../images/logo-crate-and-barrel.svg" alt="We're registered at Crate &amp; Barrel!">
-                        </a>
-                    </div>
-                </section>
-            </main>
+                </div>
 
-            <div class="overlay overlay-slidedown">
-                <button type="button" class="overlay-close">Close</button>
-                <nav class="js-scroll-to">
-                    <ul>
-                        <li><a href="#wedding-details">Details</a></li>
-                        <li><a href="#wedding-party">Wedding Party</a></li>
-                        <li><a href="#logistics">Logistics</a></li>
-                        <li><a href="#rsvp">RSVP</a></li>
-                        <li><a href="#registries">Registries</a></li>
-                    </ul>
-                </nav>
+                <div class="sub-section text-center heading-font col-sm-offset-1 col-sm-10">
+                    <h3 class="heading-font subsection-title">Map of Evanston</h3>
+                    <a class="js-modal" href="{{site.github.url}}/images/evanston-map.png">
+                        <img class="resp-img logistics-map shadow"
+                        src="{{site.github.url}}/images/evanston-map.png" alt="Wedding Map"  title="Click to zoom">
+                    </a>
+                </div>
+            </section>
+
+            <section id="rsvp" class="section row">
+                <h2 class="section-title section-title--short subheading-font text-center">RSVP</h2>
+                <div class="row">
+                    <p class="text-center copy-font col-sm-offset-2 col-sm-8">
+                        Please help us stay in touch and plan for your arrival by filling out the details below, once you have planned your travel and hotel arrangements.
+                    </p>
+                </div>
+
+                <form class="form-horizontal js-form-submit" role="form"
+                    accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+                    action="https://kateweinograd.wufoo.com/forms/z160glbr0v1ertv/#public">
+
+                    <fieldset class="form-group">
+                        <label id="title1" for="Field1" class="subheading-font col-sm-offset-2 col-sm-8">Name</label>
+                        <div class="col-sm-offset-2 col-sm-3">
+                            <input id="Field1" name="Field1" type="text" class="field text fn form-control"
+                            value="" size="8" tabindex="1" placeholder="First" required>
+                            <label class="visuallyhidden" for="Field1">First</label>
+                        </div>
+                        <div class="col-sm-5">
+                            <input id="Field2" name="Field2" type="text" class="field text ln form-control"
+                            value="" size="14" tabindex="2" placeholder="Last" required>
+                            <label class="visuallyhidden" for="Field2">Last</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label id="title3" class="subheading-font col-sm-offset-2 col-sm-8" for="Field3">Email</label>
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <input id="Field3" name="Field3" type="email" spellcheck="false" class="form-control"
+                            value="" maxlength="255" tabindex="3" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <legend id="title6" class="subheading-font desc col-sm-offset-2 col-sm-8">
+                            attending friday night welcome event at smylie brothers brewing?
+                        </legend>
+                        <div class="form-inline col-sm-offset-2 col-sm-8">
+                            <input id="radioDefault_4" name="Field4" type="hidden" value="">
+                            <span class="radio">
+                                <input id="Field4_0" name="Field4" type="radio"
+                                value="Yes" tabindex="4" checked="checked" required>
+                                <label class="heading-font choice" for="Field4_0" >Yes</label>
+                            </span>
+                            <span class="radio">
+                                <input id="Field4_1" name="Field4" type="radio"
+                                value="No" tabindex="5" required>
+                                <label class="heading-font choice" for="Field4_1" >No</label>
+                            </span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <legend class="subheading-font desc col-sm-offset-2 col-sm-8">
+                            Attending Sunday Brunch?
+                        </legend>
+                        <div class="form-inline col-sm-offset-2 col-sm-8">
+                            <input id="radioDefault_5" name="Field5" type="hidden" value="">
+                            <span class="radio">
+                                <input id="Field5_0" name="Field5" type="radio"
+                                value="Yes" tabindex="6" checked="checked" required>
+                                <label class="heading-font choice" for="Field5_0" >Yes</label>
+                            </span>
+                            <span class="radio">
+                                <input id="Field5_1" name="Field5" type="radio"
+                                value="No" tabindex="7" required>
+                                <label class="heading-font choice" for="Field5_1" >No</label>
+                            </span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label for="Field6" class="subheading-font desc col-sm-offset-2 col-sm-8">
+                            If traveling to Evanston, in which hotel will you be staying?
+                        </label>
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <input id="Field6" name="Field6" type="text" class="form-control"
+                            value="" maxlength="255" tabindex="8" placeholder="" onkeyup="">
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <input id="saveForm" name="saveForm" class="heading-font btn btn-default" type="submit" value="Submit">
+                        </div>
+                    </div>
+
+                    <div class="hide">
+                        <label for="comment">Do Not Fill This Out</label>
+                        <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                        <input type="hidden" id="idstamp" name="idstamp" value="2RiHPGZbxMlFN/GMLW1VkCjPC7zVPmcyV0gj9lZkf8M=">
+                    </div>
+                </form>
+
+            </section>
+
+            <section id="registries" class="section--short row">
+                <h2 class="section-title subheading-font text-center">Registries</h2>
+                <div class="registry registry--bloomingdales col-sm-4">
+                    <a class="btn registry__link heading-font"
+                        href="http://www.bloomingdales.com/registry/wedding/guest/?registryId=6120875">
+                        <img class="registry__img" src="../images/logo-bloomingdales.svg" alt="We're registered at Bloomingdale's!">
+                    </a>
+                </div>
+                <div class="registry registry--bed-bath-and-beyond col-sm-4">
+                  <a class="registry__link heading-font"
+                    href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541624995">
+                    <img class="registry__img" src="../images/logo-bed-bath-and-beyond.svg" alt="We're registered at Bed Bath &amp; Beyond!">
+                  </a>
+                </div>
+                <div class="registry registry--crate-and-barrel col-sm-4">
+                    <a class="registry__link heading-font"
+                        href="http://www.crateandbarrel.com/Gift-Registry/kate-sullivan-and-charlie-weinograd/r5238493">
+                        <img class="registry__img" src="../images/logo-crate-and-barrel.svg" alt="We're registered at Crate &amp; Barrel!">
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <div class="overlay overlay-slidedown">
+            <button type="button" class="overlay-close">Close</button>
+            <nav class="js-scroll-to">
+                <ul>
+                    <li><a href="#wedding-details">Details</a></li>
+                    <li><a href="#wedding-party">Wedding Party</a></li>
+                    <li><a href="#logistics">Logistics</a></li>
+                    <li><a href="#rsvp">RSVP</a></li>
+                    <li><a href="#registries">Registries</a></li>
+                </ul>
+            </nav>
+        </div>
+        {% if site.github %}
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+        {% else %}
+        <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/fancybox/source/jquery.fancybox.js"></script>
+        {% endif %}
+        <script src="{{site.github.url}}/js/scripts.js"></script>
+
+        <!--[if lte IE 9]>
+            <div class="warning-background"></div>
+            <div class="warning-modal warning-modal-lt-ie9">
+                <p class="warning-modal-title">Internet Explorer?</p>
+                <p class="warning-modal-message">You are using an outdated browser. Please <a href="http://browsehappy.com/">upgrade</a> to improve your experience.</p>
             </div>
-            <!--[if lte IE 9]>
+            <noscript>
+                <div class="warning-background warning-background-no-js"></div>
+                <div class="warning-modal warning-modal-no-js">
+                    <p class="warning-modal-title">JavaScript disabled!</p>
+                    <p class="warning-modal-message">Please turn on JavaScript in order to view this site or try <a href="http://browsehappy.com/">upgrading your browser</a>.</p>
+                </div>
+            </noscript>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
             <script>
-            </script>
-            <![endif]-->
-            {% if site.github %}
-            <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-            {% else %}
-            <script src="bower_components/underscore/underscore.js"></script>
-            <script src="bower_components/jquery/dist/jquery.js"></script>
-            <script src="bower_components/fancybox/source/jquery.fancybox.js"></script>
-            {% endif %}
-            <script src="{{site.github.url}}/js/scripts.js"></script>
-        </body>
+                (function($, window, document, undefined) {
+                    $(document).ready(function() {
+                        var $warningModal = $('.warning-modal'),
+                            $warningBackground = $('.warning-background');
 
-    </html>
+                        if (!$.cookie('LTIE9')) {
+                            $warningModal.fadeIn();
+                            $warningBackground.fadeIn();
+
+                            $warningModal.click(function() {
+                                $warningModal.fadeOut();
+                                $warningBackground.fadeOut();
+                            });
+
+                            $warningBackground.click(function() {
+                                $warningModal.fadeOut();
+                                $warningBackground.fadeOut();
+                            });
+
+                            $.cookie('LTIE9', true);
+                        }
+                    });
+                })(jQuery, window, document);
+            </script>
+        <![endif]-->
+    </body>
+
+</html>

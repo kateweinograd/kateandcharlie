@@ -94,6 +94,9 @@
             color: $color-background-fallback;
             outline: none;
         }
+        .no-js & {
+            cursor: default;
+        }
     }
 }
 

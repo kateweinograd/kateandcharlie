@@ -48,6 +48,9 @@
             background-color: transparent;
         }
     }
+    .no-js & {
+      display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -94,6 +97,10 @@
     background: #fff;
     background: rgba(#fff,0.95);
     @extend .title-font;
+    .no-js & {
+      display: none;
+    }
+
 }
 
 @media (min-width: 1280px) {
